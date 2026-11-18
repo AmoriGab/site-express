@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Página não encontrada</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+<script src="/config/brand.js"></script>
+<script src="/config/theme.js"></script>
+<script src="/config/content.js"></script>
+<script src="/config/contact.js"></script>
+<script src="/config/products.js"></script>
+<script src="/assets/js/theme.js"></script>
+<link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body data-page="404">
+<div id="app-header"></div>
+<main id="main" tabindex="-1"><div class="wrap notfound"><div><strong>404</strong><h1 style="font-size:clamp(1.6rem,4vw,2.4rem)">Página não encontrada</h1><p style="margin-inline:auto">O endereço que você acessou não existe ou foi movido.</p><a class="btn" href="/index.html">Voltar para o início</a></div></div></main>
+<div id="app-footer"></div>
+<div id="app-float"></div>
+<script src="/assets/js/components.js"></script>
+<script src="/assets/js/navigation.js"></script>
+<script src="/assets/js/carousel.js"></script>
+<script src="/assets/js/vendor/qrcode.js"></script>
+<script src="/assets/js/pix.js"></script>
+<script src="/assets/js/cart.js"></script>
+<script src="/assets/js/animations.js"></script>
+<script>
+/* 404: usa caminhos absolutos (/...) para funcionar em qualquer URL errada.
+   Se o site estiver numa subpasta, veja o Manual de Publicação. */
+(function(){var S=window.Sie;
+S.render("404");
+document.getElementById("main").innerHTML='<div class="wrap notfound"><div><strong>404</strong><h1 style="font-size:clamp(1.6rem,4vw,2.4rem)">Página não encontrada</h1><p style="margin-inline:auto">O endereço que você acessou não existe ou foi movido.</p><a class="btn" href="/index.html">Voltar para o início</a></div></div>';
+[].forEach.call(document.querySelectorAll("a[href],img[src]"),function(e){var a=e.tagName==="A"?"href":"src",v=e.getAttribute(a);if(v&&!/^(\/|#|https?:|mailto:|tel:)/.test(v))e.setAttribute(a,"/"+v);});
+S.initNav();S.initScroll();if(S.initStore)S.initStore();
+document.documentElement.classList.add("is-ready");})();
+</script>
+<script>
+/* Aviso de segurança: se o site não carregar (ex.: abriu só o index.html, sem as pastas), mostra instruções em vez de tela branca. */
+(function(){
+  if (document.documentElement.classList.contains("is-ready")) return;
+  var d=document.createElement("div");
+  d.setAttribute("role","alert");
+  d.style.cssText="font:16px/1.6 system-ui,Arial,sans-serif;max-width:640px;margin:48px auto;padding:24px;border:1px solid #cbd0dc;border-radius:16px;background:#fff;color:#14171F";
+  d.innerHTML="<strong style=\"font-size:1.2em\">O site não carregou</strong><p>Este site precisa de todas as pastas juntas (<code>assets</code> e <code>config</code>) ao lado do arquivo <code>index.html</code>.</p><ol><li>Se você recebeu um arquivo <b>.zip</b>, clique com o botão direito nele e escolha <b>Extrair tudo</b>. Não abra o site de dentro do ZIP.</li><li>Abra a pasta extraída e dê dois cliques em <code>index.html</code>.</li><li>Se já fez isso, confira se o JavaScript está ativado no navegador.</li></ol>";
+  document.body.appendChild(d);
+})();
+</script>
+</body>
+</html>

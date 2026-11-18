@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Depois de definir o domínio, troque a linha abaixo pelo endereço real:
+# Sitemap: https://www.seudominio.com.br/sitemap.xml
